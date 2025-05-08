@@ -17,19 +17,19 @@ public class Scope {
         System.out.println(driver.findElements(By.tagName("a")).size());
 
         // counting the number of links in the footer section of the page
-        WebElement footerDriver = driver.findElement(By.id("gf-BIG")); // limiting webdriver scope
-        System.out.println(footerDriver.findElements(By.tagName("a")).size());
+        WebElement footer = driver.findElement(By.id("gf-BIG")); // limiting webdriver scope
+        System.out.println(footer.findElements(By.tagName("a")).size());
 
         // counting links in a particular column in footer
-        WebElement columnDriver = footerDriver.findElement(
+        WebElement column = footer.findElement(
                 By.xpath("//table/tbody/tr/td[1]/ul"));
-        System.out.println(columnDriver.findElements(By.tagName("a")).size());
+        System.out.println(column.findElements(By.tagName("a")).size());
 
         // click on each link in the column and check if pages are opening.
-        int size = columnDriver.findElements(By.tagName("a")).size();
+        int size = column.findElements(By.tagName("a")).size();
         for (int i = 0; i < size; i++) {
             String clickOnLink = Keys.chord(Keys.CONTROL, Keys.ENTER);
-            columnDriver.findElements(By.tagName("a")).get(i).sendKeys(clickOnLink);
+            column.findElements(By.tagName("a")).get(i).sendKeys(clickOnLink);
         }
         Set<String> windows = driver.getWindowHandles();
         Iterator<String> it = windows.iterator();
