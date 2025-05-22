@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="13" passed="11" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-05-21T15:14:48 IST" name="Loan Department" finished-at="2025-05-21T15:14:48 IST" duration-ms="315">
+    <groups>
+      <group name="Smoke">
+        <method signature="Test2.ploan()[pri:0, instance:testng.Test2@1bb5a082]" name="ploan" class="testng.Test2"/>
+        <method signature="Test4.mobileLoginHomeLoan()[pri:0, instance:testng.Test4@78691363]" name="mobileLoginHomeLoan" class="testng.Test4"/>
+        <method signature="Test3.mobileLoginCarLoan()[pri:0, instance:testng.Test3@b3ca52e]" name="mobileLoginCarLoan" class="testng.Test3"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2025-05-21T15:14:48 IST" name="Personal Loan" finished-at="2025-05-21T15:14:48 IST" duration-ms="108">
+      <class name="testng.Test4">
+        <test-method signature="loginAPIHomeLoan()[pri:0, instance:testng.Test4@78691363]" started-at="2025-05-21T15:14:48 IST" name="loginAPIHomeLoan" finished-at="2025-05-21T15:14:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAPIHomeLoan -->
+        <test-method signature="mobileLoginHomeLoan()[pri:0, instance:testng.Test4@78691363]" started-at="2025-05-21T15:14:48 IST" name="mobileLoginHomeLoan" finished-at="2025-05-21T15:14:48 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileLoginHomeLoan -->
+        <test-method signature="webLoginHomeLoan(java.lang.String)[pri:0, instance:testng.Test4@78691363]" started-at="2025-05-21T15:14:48 IST" name="webLoginHomeLoan" finished-at="2025-05-21T15:14:48 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[personalloan.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webLoginHomeLoan -->
+      </class> <!-- testng.Test4 -->
+      <class name="testng.Test1">
+        <test-method signature="demo()[pri:0, instance:testng.Test1@7b98f307]" started-at="2025-05-21T15:14:48 IST" name="demo" finished-at="2025-05-21T15:14:48 IST" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- demo -->
+        <test-method is-config="true" signature="last()[pri:0, instance:testng.Test1@7b98f307]" started-at="2025-05-21T15:14:48 IST" name="last" finished-at="2025-05-21T15:14:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- last -->
+      </class> <!-- testng.Test1 -->
+      <class name="testng.Test2">
+        <test-method is-config="true" signature="prerequisite()[pri:0, instance:testng.Test2@1bb5a082]" started-at="2025-05-21T15:14:48 IST" name="prerequisite" finished-at="2025-05-21T15:14:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- prerequisite -->
+        <test-method signature="ploan()[pri:0, instance:testng.Test2@1bb5a082]" started-at="2025-05-21T15:14:48 IST" name="ploan" finished-at="2025-05-21T15:14:48 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ploan -->
+      </class> <!-- testng.Test2 -->
+    </test> <!-- Personal Loan -->
+    <test started-at="2025-05-21T15:14:48 IST" name="Car Loan" finished-at="2025-05-21T15:14:48 IST" duration-ms="83">
+      <class name="testng.Test3">
+        <test-method is-config="true" signature="beforeC()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="beforeC" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeC -->
+        <test-method is-config="true" signature="before()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="before" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="mobileSignOutCarLoan(java.lang.String,java.lang.String)[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="mobileSignOutCarLoan" data-provider="getData" finished-at="2025-05-21T15:14:48 IST" duration-ms="7" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firstusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[password]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileSignOutCarLoan -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="after" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="before" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="mobileSignOutCarLoan(java.lang.String,java.lang.String)[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="mobileSignOutCarLoan" data-provider="getData" finished-at="2025-05-21T15:14:48 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[secondusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[secondpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileSignOutCarLoan -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="after" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="before" finished-at="2025-05-21T15:14:48 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="mobileSignOutCarLoan(java.lang.String,java.lang.String)[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="mobileSignOutCarLoan" data-provider="getData" finished-at="2025-05-21T15:14:48 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[thirdusername]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[thirdpassword]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileSignOutCarLoan -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="after" finished-at="2025-05-21T15:14:48 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="before" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="webLoginCarLoan(java.lang.String,java.lang.String)[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="webLoginCarLoan" finished-at="2025-05-21T15:14:48 IST" duration-ms="4" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[carloan.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webLoginCarLoan -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="after" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="before" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="mobileLoginCarLoan()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="mobileLoginCarLoan" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileLoginCarLoan -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="after" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="before()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="before" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method signature="APICarLoan()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="APICarLoan" finished-at="2025-05-21T15:14:48 IST" depends-on-methods="testng.Test3.webLoginCarLoan" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APICarLoan -->
+        <test-method is-config="true" signature="after()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="after" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- after -->
+        <test-method is-config="true" signature="afterC()[pri:0, instance:testng.Test3@b3ca52e]" started-at="2025-05-21T15:14:48 IST" name="afterC" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterC -->
+      </class> <!-- testng.Test3 -->
+      <class name="testng.Test1">
+        <test-method is-config="true" signature="bfSuite()[pri:0, instance:testng.Test1@7b98f307]" started-at="2025-05-21T15:14:48 IST" name="bfSuite" finished-at="2025-05-21T15:14:48 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bfSuite -->
+      </class> <!-- testng.Test1 -->
+      <class name="testng.Test2">
+        <test-method is-config="true" signature="afSuite()[pri:0, instance:testng.Test2@1bb5a082]" started-at="2025-05-21T15:14:48 IST" name="afSuite" finished-at="2025-05-21T15:14:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afSuite -->
+      </class> <!-- testng.Test2 -->
+    </test> <!-- Car Loan -->
+  </suite> <!-- Loan Department -->
+</testng-results>
