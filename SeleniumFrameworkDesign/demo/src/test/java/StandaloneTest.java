@@ -16,18 +16,21 @@ public class StandaloneTest {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
         driver.get("https://rahulshettyacademy.com/client");
+
         String productName = "ZARA COAT 3";
         driver.findElement(By.id("userEmail")).sendKeys("samikshak@gmail.com");
         driver.findElement(By.id("userPassword")).sendKeys("Sam@12345");
         driver.findElement(By.id("login")).click();
 
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
         List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
         WebElement prod = products.stream()
                 .filter(product -> product.findElement(By.cssSelector("b")).getText().equals(productName)).findFirst()
                 .orElse(null);
         prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
         // ng-animating
         wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector(".ng-animating"))));

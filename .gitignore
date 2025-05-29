@@ -3,5 +3,3 @@
 
 # Ignore all target folders recursively
 **/target/
-
-**/main/
