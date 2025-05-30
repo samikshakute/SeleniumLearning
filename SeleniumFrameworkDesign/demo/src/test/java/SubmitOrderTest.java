@@ -1,8 +1,6 @@
 import java.time.Duration;
-import java.util.List;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import org.testng.Assert;
@@ -24,7 +22,7 @@ public class SubmitOrderTest {
         landingPage.goTo();
         ProductCatalogue productCatalogue = landingPage.loginApplication("samikshak@gmail.com", "Sam@12345");
 
-        List<WebElement> products = productCatalogue.getProducList();
+        productCatalogue.getProducList();
         productCatalogue.addProductToCart(productName);
         CartPage cartPage = productCatalogue.goToCartPage();
 

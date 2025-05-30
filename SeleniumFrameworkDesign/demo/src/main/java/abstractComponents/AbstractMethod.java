@@ -29,11 +29,12 @@ public class AbstractMethod {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.invisibilityOf(element));
     }
+
     @FindBy(css = "[routerlink*='cart']")
     WebElement cartHeader;
+
     public CartPage goToCartPage() {
         cartHeader.click();
-        CartPage cartPage = new CartPage(driver);
-        return cartPage;
+        return new CartPage(driver);
     }
 }

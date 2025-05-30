@@ -12,10 +12,10 @@ import abstractComponents.AbstractMethod;
 public class CartPage extends AbstractMethod {
     WebDriver driver;
 
-    @FindBy(css = "cartSection h3")
+    @FindBy(css = "div[class='cartSection'] h3")
     List<WebElement> cartProducts;
 
-    @FindBy(css = ".totalrow button")
+    @FindBy(css = ".totalRow button")
     WebElement checkout;
 
     public CartPage(WebDriver driver) {
@@ -25,7 +25,8 @@ public class CartPage extends AbstractMethod {
     }
 
     public boolean verifyProductIsDisplayed(String productName) {
-        boolean match = cartProducts.stream().anyMatch(cartProduct -> cartProduct.getText().equals(productName));
+        boolean match = cartProducts.stream()
+                .anyMatch(cartProduct -> cartProduct.getText().equalsIgnoreCase(productName));
         return match;
     }
 
