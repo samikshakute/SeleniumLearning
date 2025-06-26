@@ -5,5 +5,5 @@
 **/target/
 
 # Ignore Eclipse .project files
-*.project
+**.project
 
