@@ -3,7 +3,3 @@
 
 # Ignore all target folders recursively
 **/target/
-
-# Ignore Eclipse .project files
-**.project
-
