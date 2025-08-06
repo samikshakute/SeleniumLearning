@@ -44,7 +44,9 @@ public class Listeners extends BaseTest implements ITestListener {
     }
 
     public void onFinish(ITestContext context) {
+        System.out.println("onFinish called - flushing reports");
         extentReports.flush();
+        System.out.println("Report should be generated at: " + System.getProperty("user.dir") + "/reports/index.html");
     }
 
 }
