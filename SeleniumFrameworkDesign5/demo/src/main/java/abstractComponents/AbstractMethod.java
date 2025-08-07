@@ -21,7 +21,7 @@ public class AbstractMethod {
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(css = "[routerlink*='/dashboard/cart']")
+    @FindBy(css = "[routerlink*='cart']")
     WebElement cartHeader;
 
     @FindBy(css = "[routerlink*='myorders']")
@@ -53,8 +53,8 @@ public class AbstractMethod {
     // }
 
     public CartPage goToCartPage() throws InterruptedException {
+        Thread.sleep(1000); // Wait for spinner to disappear
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.invisibilityOf(spinnerOverlay)); // wait for spinner to disappear
         wait.until(ExpectedConditions.elementToBeClickable(cartHeader)); // Ensure button is clickable
         cartHeader.click();
         return new CartPage(driver);

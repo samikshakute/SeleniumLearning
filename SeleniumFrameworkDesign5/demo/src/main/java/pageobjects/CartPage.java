@@ -15,7 +15,7 @@ public class CartPage extends AbstractMethod {
     @FindBy(css = "div[class='cartSection'] h3")
     List<WebElement> cartProducts;
 
-    @FindBy(css = ".totalRow button") 
+    @FindBy(css = ".totalRow button")
     WebElement checkout;
 
     public CartPage(WebDriver driver) {
@@ -31,6 +31,7 @@ public class CartPage extends AbstractMethod {
     }
 
     public CheckoutPage goToCheckOutPage() {
+        waitForWebElementToAppear(checkout);
         checkout.click();
         return new CheckoutPage(driver);
     }

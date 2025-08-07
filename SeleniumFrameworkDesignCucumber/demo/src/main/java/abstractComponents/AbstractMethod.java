@@ -53,8 +53,8 @@ public class AbstractMethod {
     // }
 
     public CartPage goToCartPage() throws InterruptedException{
-        waitForElementToDisappear(spinnerOverlay); // Wait for spinner
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        wait.until(ExpectedConditions.invisibilityOf(spinnerOverlay)); // Wait for spinner
         wait.until(ExpectedConditions.elementToBeClickable(cartHeader)); // Ensure button is clickable
         cartHeader.click();
         return new CartPage(driver);
